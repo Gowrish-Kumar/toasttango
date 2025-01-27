@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+nav {
+    background-color: rgb(246, 219, 219);
+}
+
+footer li::marker {
+    content: "";
+}
+
+.category .card {
+    border: none;
+}
+
+.line {
+    border-bottom: 3px solid rgb(252, 115, 65);
+    width: 30%;
+    margin-bottom: 3px;
+}

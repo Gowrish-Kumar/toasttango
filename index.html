@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToastTango</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./toasttango.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="container">
+        <section class="container-fluid bg-dark text-light py-1">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <i class="bi bi-phone"></i>
+                    <p class="d-inline-block"> phone +91 8888888888</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <i class="bi bi-clock"></i> Timing: 3pm-10pm
+                </div>
+                <div class="col-6 col-lg-3">
+                    <input type="text" class="form-control-sm m-0" id="search" name="" placeholder="search">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="row text-center">
+                        <div class="col-6"><a href="" class="link-light link-underline link-underline-opacity-0" data-bs-toggle="modal" data-bs-target="#pro"><i class="bi bi-person-circle"></i>Profile </a></div>
+                        <div class="col-6"><a href="" class=" link-light link-underline link-underline-opacity-0"><i class="bi bi-bag-check"></i>Cart</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- this is for profile modal -->
+        <div class="modal fade" id="pro">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>SIGN IN</h3>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label class="form-label" for="us">User Name</label>
+                        <input type="text" id="us" name="" class="form-control">
+                        <label class="form-label" for="ps">Password</label>
+                        <input type="password" id="ps" name="" class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" data-bs-dismiss="modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="container-fluid">
+            <div class="navbar navbar-expand-md">
+                <div class="navbar-brand"><a href="./index.html"><img src="./toasttango/logo.png" alt=""></a></div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bar"><span
+                        class="navbar-toggler-icon"></span></button>
+                <ul class="navbar-nav collapse navbar-collapse justify-content-end" id="bar">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a href="./toastproduct.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a href="./toastabout.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a href="./toastcontact.html" class="nav-link"> Contact US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="indicators">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#indicators" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#indicators" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#indicators" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="position-relative">
+                            <img src="./toasttango/banner1.png" class="w-100" alt="">
+                            <div
+                                class="position-absolute top-50 start-50 translate-middle text-center d-none d-md-block">
+                                <h1 class="text-light">The Finest Place for the Traditional <br>
+                                    <span class="text-warning">Burger</span> and <span class="text-warning">Pizza</span>
+                                    Cuisine!
+                                </h1>
+                                <a href="./toastproduct.html"
+                                    class="text-warning link-underline link-underline-opacity-0"><button
+                                        class="btn btn-outline-success">Order Food
+                                        Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="position-relative">
+                            <img src="./toasttango/banner2.jpg" class="w-100" alt="">
+                            <div
+                                class="position-absolute top-50 start-0 translate-middle-y text-light ps-5 d-none d-md-block">
+                                <h1>HOT <span class="text-info">STUFF BURGER</span> </h1>
+                                <h2>THE MEXICAN</h2><br>
+                                <p>We are commited to your satisfaction with every order. <span class="text-warning">Get started today!</span></p><br>
+                                <a href="./toastpizza.html" class="link-underline link-underline-opacity-0"><button
+                                        class="btn btn-outline-warning">Order
+                                        now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="position-relative">
+                            <img src="./toasttango/banner3.jpg" class="w-100" alt="">
+                            <div
+                                class="position-absolute top-50 start-0 translate-middle-y ps-5 text-light d-none d-md-block">
+                                <h1>Discover Our <span class="text-primary">Menu</span></h1>
+                                <h5> We cook our dishes from the <span class="text-warning">fresh ingredients</span> 
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="container text-center py-5">
+            <h1>The <span class="text-primary">TOAST TANGO</span> Cuisine</h1>
+            <h4>The perfect place to <span class="text-warning">enjoy</span> the life & <span
+                    class="text-warning">delicious food</span> with your friends</h4><br>
+            <p class="fs-5">We have been in the Cuisine business for a very long time. Nowadays we can proudly
+                boast our reputation for a well known Cuisine in our area. Blending a culinary philosophy that pays
+                tribute to India’s rich
+                legacy our Executive Chef create an extensive menu offering both vegetarian and non-vegetarian dishes.We
+                are famous for the fabulous authentic taste, professional chef and dedicated staff. Choose any dish from
+                the menu which can help you to
+                experience the real taste of Food. </p>
+        </section>
+        <section class=" category container">
+            <h1 class="text-center">Discover Our <span class="text-warning">Menu</span></h1>
+            <div class="row py-5">
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./toasttango/pizza.png" alt="">
+                        <div class="card-body text-center">
+                            <a href="./toastpizza.html" class="link-underline link-underline-opacity-0">
+                                <p class="card-title fs-5">Pizza</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./toasttango/burger.png" alt="">
+                        <div class="card-body text-center">
+                            <a href="./toastpizza.html" class="link-underline link-underline-opacity-0">
+                                <p class="card-title fs-5">Burger</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./toasttango/sandwich.png" alt="">
+                        <div class="card-body text-center">
+                            <a href="./toastpizza.html" class="link-underline link-underline-opacity-0">
+                                <p class="card-title fs-5">Sandwich</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./toasttango/french.png" alt="">
+                        <div class="card-body text-center">
+                            <a href="./toastpizza.html" class="link-underline link-underline-opacity-0">
+                                <p class="card-title fs-5">French Fries</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./toasttango/taco.png" alt="">
+                        <div class="card-body text-center">
+                            <a href="./toastpizza.html" class="link-underline link-underline-opacity-0">
+                                <p class="card-title fs-5">Taco</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./toasttango/kebab.png" alt="">
+                        <div class="card-body text-center">
+                            <a href="./toastpizza.html" class="link-underline link-underline-opacity-0">
+                                <p class="card-title fs-5">Kebab</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h1>Popular in our <span class="text-warning">Cuisine</span></h1>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/pz10.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Chicken Pizza</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/br3.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Veggie Burger</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/kb2.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Paneer Kebab</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/ff1.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Steak cut Fries</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/kb4.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Prawn Kebab</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/sw3.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>cheese Sandwich</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/pz1.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Veg Mushroom Pie</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 gy-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./toasttango/ta4.png" alt="" class="w-100">
+                            <div class="card-title pt-3">
+                                <h5>Chrunchy Chicken taco</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success"> <a href="./toastcart.html"
+                                class="link-underline link-underline-opacity-0">Order Now</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <h1>Our Cusine <span class="text-warning">Speciality</span></h1>
+            <div class="row pt-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./toasttango/icon-bag.png" alt="">
+                            <div class="card-title">
+                                <h5>FRESH FOOD</h5>
+                            </div>
+                            <p>We use only the best ingredients to cook the tasty fresh food for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./toasttango/icon-cheff.png" alt="">
+                            <div class="card-title">
+                                <h5>EXPERIENCED CHEFS</h5>
+                            </div>
+                            <p>Our staff consists of chefs and cooks with years of experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./toasttango/icon-vari.png" alt="">
+                            <div class="card-title">
+                                <h5>A VARIETY OF DISHES</h5>
+                            </div>
+                            <p>In our menu you’ll find a wide variety of dishes with different combinations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./toasttango/icon-online.png" alt="">
+                            <div class="card-title">
+                                <h5>ORDER ONLINE</h5>
+                            </div>
+                            <p>You can order any snack or dish online in a few clicks in our City.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body position-relative">
+                            <img src="./toasttango/book.png" alt="" class="w-100">
+                            <div class=" text-center position-absolute top-50 start-50 translate-middle text-light">
+                                <h1><span class="text-danger">Book</span> a table in our <span class="text-primary">
+                                        Cuisine</span></h1>
+                                <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#booking">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body position-relative">
+                            <img src="./toasttango/rev.png" alt="" class="w-100">
+                            <div class=" text-center position-absolute top-50 start-50 translate-middle text-light">
+                                <h1>Your <span class="text-info">Opinion</span> on our <span class="text-warning">
+                                        Service's</span></h1>
+                                <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#review">Write Here</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- this is for booking -->
+            <div class="modal fade" id="booking">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                Register Here
+                            </div>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" type="text" id="name" name="username">
+                                <label class="form-label" for="days"> select date</label>
+                                <input class="form-control" type="date" id="days">
+                                <label class="form-label" for="timing"> select time</label>
+                                <input class="form-control" type="time" id="timing">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- this is for review -->
+            <div class="modal fade" id="review">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                Your Opinion
+                            </div>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" type="text" id="name" name="username">
+                                <label class="form-label" for="opini">review here</label>
+                                <textarea class="form-control" name="review" id="opini"></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <h1>What our <span class="text-warning">Customer</span>  say's</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 g-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./toasttango/rev1.png" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h5>Anil Kumar</h5>
+                                    <p>Efficient service, tasty food, and a convenient location. Ideal for a fast and
+                                        satisfying Snacks on the go, perfect for busy schedules in evenings.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 g-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./toasttango/rev2.png" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h5>Sandhya</h5>
+                                    <p>Fresh, flavorful pizzas with a variety of toppings. Quick service, reasonable
+                                        prices, and a cozy atmosphere. Ideal for cravings with friends. Highly
+                                        recommended for pizza lovers!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 g-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./toasttango/rev3.png" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h5>Mohan</h5>
+                                    <p>Tasty burgers, fresh ingredients, quick service, and friendly staff. Affordable
+                                        prices and a convenient location make it a great spot for a satisfying burger
+                                        meal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 g-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./toasttango/rev4.png" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h5>Sandeep</h5>
+                                    <p>
+                                        “The prices are as good as the menu! Each time I spend less money, than anywhere
+                                        else and get a fresh, tasty,food items! Enjoy here."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container bg-light">
+        <section class="container pt-5 border-bottom">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4>Contact Details</h4>
+                    <i class="bi bi-telephone"></i>+91 8888888888 <br>
+                    <i class="bi bi-map"></i> 10-407/A, East colony, <br>7cross street <br>jaman ali padi, Delhi – 100
+                    100
+                    <div>
+                        Monday-- saturday 3pm -- 10pm <br>
+                        sunday 12pm--10pm
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <ul>
+                        <h4>Shop</h4>
+                        <li>Burger</li>
+                        <li>Pizza</li>
+                        <li>Sandwich</li>
+                        <li>Hotdogs</li>
+                        <li>BBQ</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <ul>
+                        <h4>Links</h4>
+                        <li>Products</li>
+                        <li>Shop</li>
+                        <li>FAQs</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <ul>
+                        <h4>Follow on Social Media</h4>
+                        <li>Facebook</li>
+                        <li>Linkedin</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container py-3">
+            <div class="row">
+                <div class="col-12 col-lg-4">Payment Partners <img src="./toasttango/ama.png" alt=""> <img
+                        src="./toasttango/ame.png" alt=""> <img src="./toasttango/mas.png" alt=""> <img
+                        src="./toasttango/pp.png" alt=""> <img src="./toasttango/visa.png" alt=""></div>
+                <div class="col-12 col-lg-8 text-lg-end">Get the App of Toast tango <img src="./toasttango/apple.png"
+                        alt=""> <img src="./toasttango/goplay.png" alt=""></div>
+            </div>
+        </section>
+        <section class="container py-2">
+            <div class="row">
+                <div class="col-12 col-lg-9">&copy; 2024 Toasttango Landing HTML Template. All rights reserved. Powered
+                    by
+                    Gowrish.</div>
+                <div class="col-12 col-lg-3 text-lg-end">Follow us on<i class="bi bi-facebook"></i><i
+                        class="bi bi-twitter"></i><i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
